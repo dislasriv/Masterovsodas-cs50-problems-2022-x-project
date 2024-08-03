@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+
+      <div class = "mb-3" style = "margin-left: auto; margin-right: auto; width: 1000px;">
+            <p class = "text-white">
+                OH NO! Soos has just discovered that his Golf Cart has been hijacked and stolen TODAY (July 29), since he doesn't have insurance he needs to catch the thief before they get away.
+                Being the heir to the Mystery Shack and a national hero, he has been given the jurisdiction to lock down the town in order to round up suspects.
+                The following website contains every piece of evidence Soos could find. As his trusted detective, you must analyze his information on the prime suspects and make an arrest.
+                You have one accusation, if you mess it up, you go to jail too!! Be sure to log all of your findings in the Logs tab to organaize yourself, this is an important mission after all!
+            </p>
+            <h2 class = "text-white"> To login, make (or steal) a username and find the secret password; try different things! Failure is ultimately what synthesizes answers! </h2>
+      </div>
+
+      <hr>
+
+      <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="name" name="name" placeholder="User (Of Anyone!)" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Secret Password" type="password">
+        </div>
+        <button class="btn btn-warning" type="submit">Start Investigating?</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Logs
+{% endblock %}
+
+{% block main %}
+        <!-- main LOGS / text box -->
+        <h1 class = "text-white"> Oh look, a decryptor, how handy!<h1>
+        <hr>
+        <hr>
+        <form action="/decryptor" method="post">
+             <h2 class = "text-white"> Caesar Cipher Decryptor: <h2>
+             <textarea type = "text" name="caesar" id="caesar" placeholder = "Ciphertext" class="decryptionBox"></textarea>
+
+             <h2 class = "text-white"> Atbash Cipher Decryptor: <h2>
+             <textarea type = "text" name="atbash" id="atbash" placeholder = "Ciphertext" class="decryptionBox"></textarea>
+
+             <hr style = "margin-top:.1px">
+             <button class="btn btn-warning" type="submit">Decrypt?</button>
+        </form>
+
+{% endblock %}

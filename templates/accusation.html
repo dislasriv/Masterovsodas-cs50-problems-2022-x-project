@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Logs
+{% endblock %}
+
+{% block main %}
+        <!-- main LOGS / text box -->
+        <h1 class = "text-white">Make an arrest: <h1>
+        <hr>
+        <hr>
+
+        <form action="/accusation" method="post">
+             <h2 class = "text-white"> Who stole the cart? <h2>
+             <textarea type = "text" name="crim" id="crim" placeholder = "Name" class="decryptionBox"></textarea>
+
+             <h2 class = "text-white"> Who help the criminal steal the cart? <h2>
+             <textarea type = "text" name="accomplice" id="accomplice" placeholder = "Name" class="decryptionBox"></textarea>
+
+             <h2 class = "text-white"> What happened to Kenny? <h2>
+             <textarea type = "text" name="kenny" id="kenny" placeholder = "Thing" class="decryptionBox"></textarea>
+
+             <hr style = "margin-top:.1px">
+             <button class="btn btn-warning" type="submit">Submit?</button>
+        </form>
+{% endblock %}

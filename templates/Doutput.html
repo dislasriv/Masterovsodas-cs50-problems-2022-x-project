@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Logs
+{% endblock %}
+
+{% block main %}
+        <!-- main LOGS / text box -->
+        <h1 class = "text-white"> Decrypted Output<h1>
+        <hr>
+        <hr>
+
+        <h2 class = "text-white"> Caesar: </h2>
+        <hr>
+            <h6  class = "text-white"> if you are using the correct cipher decoder and a valid ciphertext, one of these must be valid and recognizable; search!</h6>
+            <hr>
+            {% for i in caesarOut%}
+                <p class="text-white">{{i}} </p>
+            {%endfor%}
+
+        <hr>
+        <hr>
+        <h2 class = "text-white"> Atbash: </h2>
+            <hr>
+            <p class = "text-white">{{atb}}</p>
+
+
+{% endblock %}
