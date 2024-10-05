@@ -15,8 +15,4 @@ narrative between the lines, this I feel gives the game a sense of depth and dec
 delving into the depths of the events that are truly at hand in the story. Each character is unqie with their own persoanlity, genrally adapted from the show or media they
 were adopted form in this project, this creates variaety and an absrud atmosphere which many may find entertaining.
 
-That is a brief but well-rounded overview of my project, the rest is further illustrated in my video.
-This was CS50!!
-Thank you!
-
 
